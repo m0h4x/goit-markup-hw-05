@@ -9,6 +9,7 @@
     --por-sel-background: #F5F4FA;
     --hero-background-color: #2f303a;
     --icons-color: #afb1b8;
+        --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
 
