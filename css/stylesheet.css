@@ -22,7 +22,7 @@ body {
 
 }
 .header {
-    padding: 25px 0;
+    /* padding: 25px 0; */
     border: 1px solid #ECECEC;
 }
 
@@ -62,20 +62,24 @@ ul {
     /* margin-right: 10px;  */
 }
 /* Logo */
-.logo{
-    color: var(--title-text-color);
-    font-size: 26px;
-    line-height: 1.2;
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    display: block;
+
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-color {
+  color: #000000;
 }
 
 /* Site nav */
 .site-nav{
     display: flex;
-    align-items: center;
-    margin-left: 90px;
+    /* align-items: center; */
+    margin-left: 93px;
 }
 .site-nav .item,
 .site-adr .item {
@@ -107,10 +111,11 @@ ul {
     color: var(--accent-color);
 
 }
-.main-nav {
-    display: flex;
-    align-items: center;
-    margin-left: 70px;
+
+.main-nav,
+.nav-flex {
+  display: flex;
+  align-items: center;
 }
 /* Site adr */
 .site-adr{
@@ -578,9 +583,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .footer-adr .link-current {
     color: var(--accent-color);
 }
-.logo-color{
-    color: var(--accent-color);
-}
+
 .logo-second-color{
     color: var(--primary-white-color);
 }
@@ -679,4 +682,40 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 18px;
   transform: translate(-10%, 10%);
   background-image: url('../images/close-button.svg');
+}
+.current::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+.site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav-link:hover,
+.site-nav-link:focus,
+.current {
+  color: var(--accent-color);
+}
+.site-nav-item {
+  position: relative;
+}
+
+.site-nav-item + .site-nav-item {
+  margin-left: 50px;
 }
