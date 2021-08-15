@@ -74,7 +74,9 @@ ul {
 .logo-color {
   color: #000000;
 }
-
+.other-logo-color {
+  color: var(--accent-color);
+}
 /* Site nav */
 .site-nav{
     display: flex;
