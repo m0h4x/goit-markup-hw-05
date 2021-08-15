@@ -9,7 +9,7 @@
     --por-sel-background: #F5F4FA;
     --hero-background-color: #2f303a;
     --icons-color: #afb1b8;
-        --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
 
@@ -134,7 +134,9 @@ ul {
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
-
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
 }
@@ -144,11 +146,14 @@ ul {
 }
 .site-adr-link:hover .site-adr-icon,
 .site-adr-link:focus .site-adr-icon {
-  fill: var(--accent-color);
+    fill: var(--accent-color);
 }
 .site-adr-icon {
-  margin-right: 10px;
-  fill: var(--secondary-text-color);
+    margin-right: 10px;
+    fill: var(--secondary-text-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .visually-hidden {
     position: absolute;
@@ -217,7 +222,7 @@ ul {
     letter-spacing: 0.06em;
     
 }
-    .icons {
+.icons {
     display: flex;
     justify-content: center;
     background-color: #f5f4fa;
@@ -225,19 +230,19 @@ ul {
     padding: 25px 0;
     }
 
-    .icons-icon {
+.icons-icon {
     width: 70px;
     height: 70px;
     }
-    .team-icon-item:not(:last-child) {
+.team-icon-item:not(:last-child) {
     margin-right: 10px;
     }
-    .team-list-site {
+.team-list-site {
     display: flex;
     justify-content: center;
     margin-top: 16px;
     }
-    .team-list-icon {
+.team-list-icon {
     display: flex;
     justify-content: center;
 
@@ -246,17 +251,23 @@ ul {
     height: 44px;
     border-radius: 50%;
     background-color: var(--primary-white-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .team-list-icon:hover,
-    .team-list-icon:focus {
+.team-list-icon:hover,
+.team-list-icon:focus {
     background-color: var(--accent-color);
     }
-    .team-list-icon:hover .site-icon,
-    .team-list-icon:focus .site-icon {
+.team-list-icon:hover .site-icon,
+.team-list-icon:focus .site-icon {
     fill: var(--primary-white-color);
     }
-    .site-icon {
+.site-icon {
     fill: var(--icons-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 /* Section */
 .section {
@@ -451,6 +462,9 @@ ul {
     color: var(--primary-text-color);
     background-color: var(--por-sel-background);
     padding: 6px 22px;
+    transition-property: background-color, color, box-shadow, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-navigation:hover,
@@ -472,8 +486,8 @@ ul {
 .portfolio-card {
     display: block;
     transition-property: box-shadow;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card:hover,
@@ -483,8 +497,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card:hover .overlay-text,
 .portfolio-card:focus .overlay-text {
-  opacity: 1;
-  transform: translatey(0%);
+    opacity: 1;
+    transform: translatey(0%);
 }
 .portfolio-text {
     padding: 20px 24px;
@@ -522,9 +536,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 .client-icon {
     fill: var(--icons-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 .client-link:hover,
 .client-link:focus {
@@ -577,6 +597,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #ffffff1a;
     border-radius: 50%;
     margin-right: 10px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 .footer-icons-link:hover,
 .footer-icons-link:focus {
