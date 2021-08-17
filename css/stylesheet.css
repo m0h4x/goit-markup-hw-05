@@ -131,8 +131,8 @@ ul {
 .site-adr-link {
     color: var(--secondary-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     /* text-decoration: none; */
     transition-property: color;
     transition-duration: 250ms;
