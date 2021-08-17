@@ -699,7 +699,9 @@ ul {
   border-radius: 50%;
   border-color: #0000001a;
 }
-
+.close-button {
+  transform: translate(-10%, 10%);
+}
 .backdrop-close-button::before {
   content: '';
   display: inline-block;
