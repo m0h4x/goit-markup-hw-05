@@ -186,12 +186,15 @@ ul {
     display: flex;
 }
 
-    .adres-icon {
+.adres-icon {
     margin-right: 10px;
     fill: var(--secondary-text-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .adres-link {
+.adres-link {
     display: flex;
     align-items: center;
     color: var(--secondary-text-color);
