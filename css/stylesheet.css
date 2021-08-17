@@ -133,7 +133,7 @@ ul {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    text-decoration: none;
+    /* text-decoration: none; */
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
