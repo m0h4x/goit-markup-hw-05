@@ -94,14 +94,14 @@ ul {
     margin-right: 0;
 }
 
-.site-nav .link {
+/* .site-nav .link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
     display: block;
-}
+} */
 
 .site-nav .link:hover,
 .site-nav .link:focus {
