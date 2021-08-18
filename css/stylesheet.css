@@ -688,6 +688,8 @@ ul {
   transform: translate(-50%, -50%) scale(0.7);
 }
 
+.pointer {cursor: pointer;}
+
 .backdrop-close-button {
   position: absolute;
   top: 8px;
